@@ -1,0 +1,30 @@
+# Dependencies
+node_modules/
+.venv/
+venv/
+__pycache__/
+*.pyc
+
+# Environment
+.env
+.DS_Store
+
+# Logs
+*.log
+backend_output.txt
+
+# Build
+dist/
+build/
+
+# IDE
+.vscode/
+.idea/
+
+# Database
+*.db
+*.sqlite3
+backend/data/*.db
+
+# Artifacts
+.gemini/

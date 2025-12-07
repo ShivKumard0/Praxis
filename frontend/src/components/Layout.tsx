@@ -51,7 +51,10 @@ const Layout: React.FC<{ children: React.ReactNode }> = ({ children }) => {
           <button onClick={() => setIsSidebarOpen(!isSidebarOpen)} className="menu-btn">
             {isSidebarOpen ? <X size={24} /> : <Menu size={24} />}
           </button>
-          <div className="logo">Praxis</div>
+          <div className="logo-container" style={{ display: 'flex', alignItems: 'center', gap: '0.5rem' }}>
+            <img src="/logo.png" alt="Praxis Logo" style={{ height: '24px', width: '24px' }} />
+            <div className="logo">Praxis</div>
+          </div>
           <div className="user-avatar">JD</div>
         </div>
       )}
@@ -59,7 +62,7 @@ const Layout: React.FC<{ children: React.ReactNode }> = ({ children }) => {
       {/* Sidebar */}
       <aside className={`sidebar ${isSidebarOpen ? 'open' : 'closed'} ${isMobile ? 'mobile' : ''}`}>
         <div className="sidebar-header">
-          <div className="logo-icon"></div>
+          <img src="/logo.png" alt="Praxis Logo" style={{ height: '32px', width: '32px' }} />
           <span className="logo-text">Praxis</span>
         </div>
 
